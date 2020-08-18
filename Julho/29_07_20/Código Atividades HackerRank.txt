@@ -1,0 +1,58 @@
+    let soma = 0;
+    let somaD = 0;
+    let menor = null;
+    for(let i = 0; i < precos.length; i++){
+        if(precos.length <= 2){
+            soma += precos[i];
+        } else{
+            soma += precos[i];
+            if(menor === null){
+                menor = precos[i]
+            }else{
+                if(menor > precos[i]){
+                    menor = precos[i];
+                }
+            }
+        }
+    }
+    if (menor === null){
+        console.log(soma)
+    }
+    else{
+        somaD = soma - menor*0.5;
+        console.log(somaD)
+    }
+
+
+Questão do contador de palavras
+
+function solucao(texto) {
+    let cont = 0;
+    for(let i= 1; i < texto.length; i++){
+        if(texto[i] === " " && texto[i-1] !== " "){
+            cont++;
+        }
+    }
+    if(texto[texto.length - 1] === " "){
+        console.log(cont);
+    }else{
+        cont++;
+        console.log(cont)
+    }
+}
+
+Questão do contador de palavras contando à frente
+function solucao(texto) {
+    let cont = 0;
+    for(let i = 0; i < texto.length; i++){
+        if(texto[i] !== " " && texto[i+1] === " "){
+            cont++
+        }
+    }
+    if(texto[texto.length - 1] !== ' '){
+        cont++
+        console.log(cont)
+    } else{
+        console.log(cont)
+    }
+}

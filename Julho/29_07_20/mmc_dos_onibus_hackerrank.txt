@@ -1,0 +1,35 @@
+function solucao(a, b) {
+    let flag = false;
+    let mula = [];
+    let mulb = [];
+    let mmc = 0;
+    if(a % b === 0){
+        mmc = a;
+        
+    }else if(b % a === 0){
+        mmc = b
+        
+    } else{
+        for(let i = 0; i <= 10000; i++ ){
+            mula[i] = i * a
+            mulb[i] = i * b
+        }
+        for(let j = 0; j < mula.length; j++){
+            for(let k = 0; k < mulb.length; k++){
+                if(mulb[k] === mula[j]){
+                    flag = true;
+                    mmc = mulb[k];
+                    break;
+                    
+                }
+            }
+            if(mmc !== 0 && flag === true){
+                break;
+            }
+        }
+        if(flag === false){
+            mmc = a * b;
+        }
+    }
+    console.log(mmc)
+}

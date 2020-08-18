@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+#algo {
+    padding: 0.5rem 0.4rem;
+    background: rgb(231, 224, 224);
+}
+.guardar {
+    max-width: 100%;
+    flex: 0 0;
+    padding: 0.5rem 4rem;
+    max-width: 40px;
+}
+
+
+

@@ -1,0 +1,18 @@
+function solucao(listaDePessoas) {
+    let soma = 0;
+    let listaPermitidos = [];
+    
+    for(let i = 0; i < listaDePessoas.length; i++ ){
+          if(listaDePessoas[i].idade < 12 || listaDePessoas[i].idade > 65 || (listaDePessoas[i].alturaEmCm < 150) ||                 (listaDePessoas[i].possuiPatologiaCardiaca)){
+              continue;
+            } else{
+                if(listaDePessoas[i].ehEstudante || listaDePessoas[i].idade < 18){
+                    soma += 10; 
+                }else{
+                    soma += 20;;
+                }
+            }
+    }
+    
+    console.log(soma)
+}

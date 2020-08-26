@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em;
+    min-height: 100vh;
+    overflow: hidden; /*Sem scroll*/
+}
+.controle {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.caixa-texto{
+    padding: 1em 1.5em;
+    color: white;
+    line-height: 1.5em;
+    border-radius: 0.5em;
+    background-color: palevioletred;
+
+}
+
+button {
+
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+
+}
+
+.rocket-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex: 0 0 300px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rocket-container img {
+    height: 500px;
+    object-fit: cover;
+}
